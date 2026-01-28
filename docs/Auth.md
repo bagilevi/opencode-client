@@ -1,0 +1,32 @@
+# OpencodeClient::Auth
+
+## Properties
+
+| Name | Type | Description | Notes |
+| ---- | ---- | ----------- | ----- |
+| **type** | **String** |  |  |
+| **refresh** | **String** |  |  |
+| **access** | **String** |  |  |
+| **expires** | **Float** |  |  |
+| **account_id** | **String** |  | [optional] |
+| **enterprise_url** | **String** |  | [optional] |
+| **key** | **String** |  |  |
+| **token** | **String** |  |  |
+
+## Example
+
+```ruby
+require 'opencode-client'
+
+instance = OpencodeClient::Auth.new(
+  type: null,
+  refresh: null,
+  access: null,
+  expires: null,
+  account_id: null,
+  enterprise_url: null,
+  key: null,
+  token: null
+)
+```
+

@@ -1,0 +1,22 @@
+# OpencodeClient::AppSkills200ResponseInner
+
+## Properties
+
+| Name | Type | Description | Notes |
+| ---- | ---- | ----------- | ----- |
+| **name** | **String** |  |  |
+| **description** | **String** |  |  |
+| **location** | **String** |  |  |
+
+## Example
+
+```ruby
+require 'opencode-client'
+
+instance = OpencodeClient::AppSkills200ResponseInner.new(
+  name: null,
+  description: null,
+  location: null
+)
+```
+

@@ -1,0 +1,32 @@
+# OpencodeClient::FilePartSource
+
+## Properties
+
+| Name | Type | Description | Notes |
+| ---- | ---- | ----------- | ----- |
+| **text** | [**FilePartSourceText**](FilePartSourceText.md) |  |  |
+| **type** | **String** |  |  |
+| **path** | **String** |  |  |
+| **range** | [**Range**](Range.md) |  |  |
+| **name** | **String** |  |  |
+| **kind** | **Integer** |  |  |
+| **client_name** | **String** |  |  |
+| **uri** | **String** |  |  |
+
+## Example
+
+```ruby
+require 'opencode-client'
+
+instance = OpencodeClient::FilePartSource.new(
+  text: null,
+  type: null,
+  path: null,
+  range: null,
+  name: null,
+  kind: null,
+  client_name: null,
+  uri: null
+)
+```
+
