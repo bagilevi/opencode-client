@@ -21,9 +21,9 @@ module OpencodeClient
     end
     # Get session children
     # Retrieve all child sessions that were forked from the specified parent session.
-    # @param session_id [String] 
+    # @param session_id [String]
     # @param [Hash] opts the optional parameters
-    # @option opts [String] :directory 
+    # @option opts [String] :directory
     # @return [Array<Session>]
     def session_children(session_id, opts = {})
       data, _status_code, _headers = session_children_with_http_info(session_id, opts)
@@ -32,9 +32,9 @@ module OpencodeClient
 
     # Get session children
     # Retrieve all child sessions that were forked from the specified parent session.
-    # @param session_id [String] 
+    # @param session_id [String]
     # @param [Hash] opts the optional parameters
-    # @option opts [String] :directory 
+    # @option opts [String] :directory
     # @return [Array<(Array<Session>, Integer, Hash)>] Array<Session> data, response status code and response headers
     def session_children_with_http_info(session_id, opts = {})
       if @api_client.config.debugging
@@ -92,9 +92,9 @@ module OpencodeClient
 
     # Get session
     # Retrieve detailed information about a specific OpenCode session.
-    # @param session_id [String] 
+    # @param session_id [String]
     # @param [Hash] opts the optional parameters
-    # @option opts [String] :directory 
+    # @option opts [String] :directory
     # @return [Session]
     def session_get(session_id, opts = {})
       data, _status_code, _headers = session_get_with_http_info(session_id, opts)
@@ -103,9 +103,9 @@ module OpencodeClient
 
     # Get session
     # Retrieve detailed information about a specific OpenCode session.
-    # @param session_id [String] 
+    # @param session_id [String]
     # @param [Hash] opts the optional parameters
-    # @option opts [String] :directory 
+    # @option opts [String] :directory
     # @return [Array<(Session, Integer, Hash)>] Session data, response status code and response headers
     def session_get_with_http_info(session_id, opts = {})
       if @api_client.config.debugging

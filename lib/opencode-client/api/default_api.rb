@@ -22,7 +22,7 @@ module OpencodeClient
     # List agents
     # Get a list of all available AI agents in the OpenCode system.
     # @param [Hash] opts the optional parameters
-    # @option opts [String] :directory 
+    # @option opts [String] :directory
     # @return [Array<Agent>]
     def app_agents(opts = {})
       data, _status_code, _headers = app_agents_with_http_info(opts)
@@ -32,7 +32,7 @@ module OpencodeClient
     # List agents
     # Get a list of all available AI agents in the OpenCode system.
     # @param [Hash] opts the optional parameters
-    # @option opts [String] :directory 
+    # @option opts [String] :directory
     # @return [Array<(Array<Agent>, Integer, Hash)>] Array<Agent> data, response status code and response headers
     def app_agents_with_http_info(opts = {})
       if @api_client.config.debugging
@@ -82,8 +82,8 @@ module OpencodeClient
     # Write log
     # Write a log entry to the server logs with specified level and metadata.
     # @param [Hash] opts the optional parameters
-    # @option opts [String] :directory 
-    # @option opts [AppLogRequest] :app_log_request 
+    # @option opts [String] :directory
+    # @option opts [AppLogRequest] :app_log_request
     # @return [Boolean]
     def app_log(opts = {})
       data, _status_code, _headers = app_log_with_http_info(opts)
@@ -93,8 +93,8 @@ module OpencodeClient
     # Write log
     # Write a log entry to the server logs with specified level and metadata.
     # @param [Hash] opts the optional parameters
-    # @option opts [String] :directory 
-    # @option opts [AppLogRequest] :app_log_request 
+    # @option opts [String] :directory
+    # @option opts [AppLogRequest] :app_log_request
     # @return [Array<(Boolean, Integer, Hash)>] Boolean data, response status code and response headers
     def app_log_with_http_info(opts = {})
       if @api_client.config.debugging
@@ -149,7 +149,7 @@ module OpencodeClient
     # List skills
     # Get a list of all available skills in the OpenCode system.
     # @param [Hash] opts the optional parameters
-    # @option opts [String] :directory 
+    # @option opts [String] :directory
     # @return [Array<AppSkills200ResponseInner>]
     def app_skills(opts = {})
       data, _status_code, _headers = app_skills_with_http_info(opts)
@@ -159,7 +159,7 @@ module OpencodeClient
     # List skills
     # Get a list of all available skills in the OpenCode system.
     # @param [Hash] opts the optional parameters
-    # @option opts [String] :directory 
+    # @option opts [String] :directory
     # @return [Array<(Array<AppSkills200ResponseInner>, Integer, Hash)>] Array<AppSkills200ResponseInner> data, response status code and response headers
     def app_skills_with_http_info(opts = {})
       if @api_client.config.debugging
@@ -208,10 +208,10 @@ module OpencodeClient
 
     # Set auth credentials
     # Set authentication credentials
-    # @param provider_id [String] 
+    # @param provider_id [String]
     # @param [Hash] opts the optional parameters
-    # @option opts [String] :directory 
-    # @option opts [Auth] :auth 
+    # @option opts [String] :directory
+    # @option opts [Auth] :auth
     # @return [Boolean]
     def auth_set(provider_id, opts = {})
       data, _status_code, _headers = auth_set_with_http_info(provider_id, opts)
@@ -220,10 +220,10 @@ module OpencodeClient
 
     # Set auth credentials
     # Set authentication credentials
-    # @param provider_id [String] 
+    # @param provider_id [String]
     # @param [Hash] opts the optional parameters
-    # @option opts [String] :directory 
-    # @option opts [Auth] :auth 
+    # @option opts [String] :directory
+    # @option opts [Auth] :auth
     # @return [Array<(Boolean, Integer, Hash)>] Boolean data, response status code and response headers
     def auth_set_with_http_info(provider_id, opts = {})
       if @api_client.config.debugging
@@ -282,7 +282,7 @@ module OpencodeClient
     # List commands
     # Get a list of all available commands in the OpenCode system.
     # @param [Hash] opts the optional parameters
-    # @option opts [String] :directory 
+    # @option opts [String] :directory
     # @return [Array<Command>]
     def command_list(opts = {})
       data, _status_code, _headers = command_list_with_http_info(opts)
@@ -292,7 +292,7 @@ module OpencodeClient
     # List commands
     # Get a list of all available commands in the OpenCode system.
     # @param [Hash] opts the optional parameters
-    # @option opts [String] :directory 
+    # @option opts [String] :directory
     # @return [Array<(Array<Command>, Integer, Hash)>] Array<Command> data, response status code and response headers
     def command_list_with_http_info(opts = {})
       if @api_client.config.debugging
@@ -342,7 +342,7 @@ module OpencodeClient
     # Get configuration
     # Retrieve the current OpenCode configuration settings and preferences.
     # @param [Hash] opts the optional parameters
-    # @option opts [String] :directory 
+    # @option opts [String] :directory
     # @return [Config]
     def config_get(opts = {})
       data, _status_code, _headers = config_get_with_http_info(opts)
@@ -352,7 +352,7 @@ module OpencodeClient
     # Get configuration
     # Retrieve the current OpenCode configuration settings and preferences.
     # @param [Hash] opts the optional parameters
-    # @option opts [String] :directory 
+    # @option opts [String] :directory
     # @return [Array<(Config, Integer, Hash)>] Config data, response status code and response headers
     def config_get_with_http_info(opts = {})
       if @api_client.config.debugging
@@ -402,7 +402,7 @@ module OpencodeClient
     # List config providers
     # Get a list of all configured AI providers and their default models.
     # @param [Hash] opts the optional parameters
-    # @option opts [String] :directory 
+    # @option opts [String] :directory
     # @return [ConfigProviders200Response]
     def config_providers(opts = {})
       data, _status_code, _headers = config_providers_with_http_info(opts)
@@ -412,7 +412,7 @@ module OpencodeClient
     # List config providers
     # Get a list of all configured AI providers and their default models.
     # @param [Hash] opts the optional parameters
-    # @option opts [String] :directory 
+    # @option opts [String] :directory
     # @return [Array<(ConfigProviders200Response, Integer, Hash)>] ConfigProviders200Response data, response status code and response headers
     def config_providers_with_http_info(opts = {})
       if @api_client.config.debugging
@@ -462,8 +462,8 @@ module OpencodeClient
     # Update configuration
     # Update OpenCode configuration settings and preferences.
     # @param [Hash] opts the optional parameters
-    # @option opts [String] :directory 
-    # @option opts [Config] :config 
+    # @option opts [String] :directory
+    # @option opts [Config] :config
     # @return [Config]
     def config_update(opts = {})
       data, _status_code, _headers = config_update_with_http_info(opts)
@@ -473,8 +473,8 @@ module OpencodeClient
     # Update configuration
     # Update OpenCode configuration settings and preferences.
     # @param [Hash] opts the optional parameters
-    # @option opts [String] :directory 
-    # @option opts [Config] :config 
+    # @option opts [String] :directory
+    # @option opts [Config] :config
     # @return [Array<(Config, Integer, Hash)>] Config data, response status code and response headers
     def config_update_with_http_info(opts = {})
       if @api_client.config.debugging
@@ -529,7 +529,7 @@ module OpencodeClient
     # Subscribe to events
     # Get events
     # @param [Hash] opts the optional parameters
-    # @option opts [String] :directory 
+    # @option opts [String] :directory
     # @return [Event]
     def event_subscribe(opts = {})
       data, _status_code, _headers = event_subscribe_with_http_info(opts)
@@ -539,7 +539,7 @@ module OpencodeClient
     # Subscribe to events
     # Get events
     # @param [Hash] opts the optional parameters
-    # @option opts [String] :directory 
+    # @option opts [String] :directory
     # @return [Array<(Event, Integer, Hash)>] Event data, response status code and response headers
     def event_subscribe_with_http_info(opts = {})
       if @api_client.config.debugging
@@ -589,7 +589,7 @@ module OpencodeClient
     # Get MCP resources
     # Get all available MCP resources from connected servers. Optionally filter by name.
     # @param [Hash] opts the optional parameters
-    # @option opts [String] :directory 
+    # @option opts [String] :directory
     # @return [Hash<String, McpResource>]
     def experimental_resource_list(opts = {})
       data, _status_code, _headers = experimental_resource_list_with_http_info(opts)
@@ -599,7 +599,7 @@ module OpencodeClient
     # Get MCP resources
     # Get all available MCP resources from connected servers. Optionally filter by name.
     # @param [Hash] opts the optional parameters
-    # @option opts [String] :directory 
+    # @option opts [String] :directory
     # @return [Array<(Hash<String, McpResource>, Integer, Hash)>] Hash<String, McpResource> data, response status code and response headers
     def experimental_resource_list_with_http_info(opts = {})
       if @api_client.config.debugging
@@ -648,9 +648,9 @@ module OpencodeClient
 
     # List files
     # List files and directories in a specified path.
-    # @param path [String] 
+    # @param path [String]
     # @param [Hash] opts the optional parameters
-    # @option opts [String] :directory 
+    # @option opts [String] :directory
     # @return [Array<FileNode>]
     def file_list(path, opts = {})
       data, _status_code, _headers = file_list_with_http_info(path, opts)
@@ -659,9 +659,9 @@ module OpencodeClient
 
     # List files
     # List files and directories in a specified path.
-    # @param path [String] 
+    # @param path [String]
     # @param [Hash] opts the optional parameters
-    # @option opts [String] :directory 
+    # @option opts [String] :directory
     # @return [Array<(Array<FileNode>, Integer, Hash)>] Array<FileNode> data, response status code and response headers
     def file_list_with_http_info(path, opts = {})
       if @api_client.config.debugging
@@ -715,9 +715,9 @@ module OpencodeClient
 
     # Read file
     # Read the content of a specified file.
-    # @param path [String] 
+    # @param path [String]
     # @param [Hash] opts the optional parameters
-    # @option opts [String] :directory 
+    # @option opts [String] :directory
     # @return [FileContent]
     def file_read(path, opts = {})
       data, _status_code, _headers = file_read_with_http_info(path, opts)
@@ -726,9 +726,9 @@ module OpencodeClient
 
     # Read file
     # Read the content of a specified file.
-    # @param path [String] 
+    # @param path [String]
     # @param [Hash] opts the optional parameters
-    # @option opts [String] :directory 
+    # @option opts [String] :directory
     # @return [Array<(FileContent, Integer, Hash)>] FileContent data, response status code and response headers
     def file_read_with_http_info(path, opts = {})
       if @api_client.config.debugging
@@ -783,7 +783,7 @@ module OpencodeClient
     # Get file status
     # Get the git status of all files in the project.
     # @param [Hash] opts the optional parameters
-    # @option opts [String] :directory 
+    # @option opts [String] :directory
     # @return [Array<File>]
     def file_status(opts = {})
       data, _status_code, _headers = file_status_with_http_info(opts)
@@ -793,7 +793,7 @@ module OpencodeClient
     # Get file status
     # Get the git status of all files in the project.
     # @param [Hash] opts the optional parameters
-    # @option opts [String] :directory 
+    # @option opts [String] :directory
     # @return [Array<(Array<File>, Integer, Hash)>] Array<File> data, response status code and response headers
     def file_status_with_http_info(opts = {})
       if @api_client.config.debugging
@@ -842,12 +842,12 @@ module OpencodeClient
 
     # Find files
     # Search for files or directories by name or pattern in the project directory.
-    # @param query [String] 
+    # @param query [String]
     # @param [Hash] opts the optional parameters
-    # @option opts [String] :directory 
-    # @option opts [String] :dirs 
-    # @option opts [String] :type 
-    # @option opts [Integer] :limit 
+    # @option opts [String] :directory
+    # @option opts [String] :dirs
+    # @option opts [String] :type
+    # @option opts [Integer] :limit
     # @return [Array<String>]
     def find_files(query, opts = {})
       data, _status_code, _headers = find_files_with_http_info(query, opts)
@@ -856,12 +856,12 @@ module OpencodeClient
 
     # Find files
     # Search for files or directories by name or pattern in the project directory.
-    # @param query [String] 
+    # @param query [String]
     # @param [Hash] opts the optional parameters
-    # @option opts [String] :directory 
-    # @option opts [String] :dirs 
-    # @option opts [String] :type 
-    # @option opts [Integer] :limit 
+    # @option opts [String] :directory
+    # @option opts [String] :dirs
+    # @option opts [String] :type
+    # @option opts [Integer] :limit
     # @return [Array<(Array<String>, Integer, Hash)>] Array<String> data, response status code and response headers
     def find_files_with_http_info(query, opts = {})
       if @api_client.config.debugging
@@ -934,9 +934,9 @@ module OpencodeClient
 
     # Find symbols
     # Search for workspace symbols like functions, classes, and variables using LSP.
-    # @param query [String] 
+    # @param query [String]
     # @param [Hash] opts the optional parameters
-    # @option opts [String] :directory 
+    # @option opts [String] :directory
     # @return [Array<Symbol>]
     def find_symbols(query, opts = {})
       data, _status_code, _headers = find_symbols_with_http_info(query, opts)
@@ -945,9 +945,9 @@ module OpencodeClient
 
     # Find symbols
     # Search for workspace symbols like functions, classes, and variables using LSP.
-    # @param query [String] 
+    # @param query [String]
     # @param [Hash] opts the optional parameters
-    # @option opts [String] :directory 
+    # @option opts [String] :directory
     # @return [Array<(Array<Symbol>, Integer, Hash)>] Array<Symbol> data, response status code and response headers
     def find_symbols_with_http_info(query, opts = {})
       if @api_client.config.debugging
@@ -1001,9 +1001,9 @@ module OpencodeClient
 
     # Find text
     # Search for text patterns across files in the project using ripgrep.
-    # @param pattern [String] 
+    # @param pattern [String]
     # @param [Hash] opts the optional parameters
-    # @option opts [String] :directory 
+    # @option opts [String] :directory
     # @return [Array<FindText200ResponseInner>]
     def find_text(pattern, opts = {})
       data, _status_code, _headers = find_text_with_http_info(pattern, opts)
@@ -1012,9 +1012,9 @@ module OpencodeClient
 
     # Find text
     # Search for text patterns across files in the project using ripgrep.
-    # @param pattern [String] 
+    # @param pattern [String]
     # @param [Hash] opts the optional parameters
-    # @option opts [String] :directory 
+    # @option opts [String] :directory
     # @return [Array<(Array<FindText200ResponseInner>, Integer, Hash)>] Array<FindText200ResponseInner> data, response status code and response headers
     def find_text_with_http_info(pattern, opts = {})
       if @api_client.config.debugging
@@ -1069,7 +1069,7 @@ module OpencodeClient
     # Get formatter status
     # Get formatter status
     # @param [Hash] opts the optional parameters
-    # @option opts [String] :directory 
+    # @option opts [String] :directory
     # @return [Array<FormatterStatus>]
     def formatter_status(opts = {})
       data, _status_code, _headers = formatter_status_with_http_info(opts)
@@ -1079,7 +1079,7 @@ module OpencodeClient
     # Get formatter status
     # Get formatter status
     # @param [Hash] opts the optional parameters
-    # @option opts [String] :directory 
+    # @option opts [String] :directory
     # @return [Array<(Array<FormatterStatus>, Integer, Hash)>] Array<FormatterStatus> data, response status code and response headers
     def formatter_status_with_http_info(opts = {})
       if @api_client.config.debugging
@@ -1300,7 +1300,7 @@ module OpencodeClient
     # Dispose instance
     # Clean up and dispose the current OpenCode instance, releasing all resources.
     # @param [Hash] opts the optional parameters
-    # @option opts [String] :directory 
+    # @option opts [String] :directory
     # @return [Boolean]
     def instance_dispose(opts = {})
       data, _status_code, _headers = instance_dispose_with_http_info(opts)
@@ -1310,7 +1310,7 @@ module OpencodeClient
     # Dispose instance
     # Clean up and dispose the current OpenCode instance, releasing all resources.
     # @param [Hash] opts the optional parameters
-    # @option opts [String] :directory 
+    # @option opts [String] :directory
     # @return [Array<(Boolean, Integer, Hash)>] Boolean data, response status code and response headers
     def instance_dispose_with_http_info(opts = {})
       if @api_client.config.debugging
@@ -1360,7 +1360,7 @@ module OpencodeClient
     # Get LSP status
     # Get LSP server status
     # @param [Hash] opts the optional parameters
-    # @option opts [String] :directory 
+    # @option opts [String] :directory
     # @return [Array<LSPStatus>]
     def lsp_status(opts = {})
       data, _status_code, _headers = lsp_status_with_http_info(opts)
@@ -1370,7 +1370,7 @@ module OpencodeClient
     # Get LSP status
     # Get LSP server status
     # @param [Hash] opts the optional parameters
-    # @option opts [String] :directory 
+    # @option opts [String] :directory
     # @return [Array<(Array<LSPStatus>, Integer, Hash)>] Array<LSPStatus> data, response status code and response headers
     def lsp_status_with_http_info(opts = {})
       if @api_client.config.debugging
@@ -1420,8 +1420,8 @@ module OpencodeClient
     # Add MCP server
     # Dynamically add a new Model Context Protocol (MCP) server to the system.
     # @param [Hash] opts the optional parameters
-    # @option opts [String] :directory 
-    # @option opts [McpAddRequest] :mcp_add_request 
+    # @option opts [String] :directory
+    # @option opts [McpAddRequest] :mcp_add_request
     # @return [Hash<String, MCPStatus>]
     def mcp_add(opts = {})
       data, _status_code, _headers = mcp_add_with_http_info(opts)
@@ -1431,8 +1431,8 @@ module OpencodeClient
     # Add MCP server
     # Dynamically add a new Model Context Protocol (MCP) server to the system.
     # @param [Hash] opts the optional parameters
-    # @option opts [String] :directory 
-    # @option opts [McpAddRequest] :mcp_add_request 
+    # @option opts [String] :directory
+    # @option opts [McpAddRequest] :mcp_add_request
     # @return [Array<(Hash<String, MCPStatus>, Integer, Hash)>] Hash<String, MCPStatus> data, response status code and response headers
     def mcp_add_with_http_info(opts = {})
       if @api_client.config.debugging
@@ -1486,9 +1486,9 @@ module OpencodeClient
 
     # Authenticate MCP OAuth
     # Start OAuth flow and wait for callback (opens browser)
-    # @param name [String] 
+    # @param name [String]
     # @param [Hash] opts the optional parameters
-    # @option opts [String] :directory 
+    # @option opts [String] :directory
     # @return [MCPStatus]
     def mcp_auth_authenticate(name, opts = {})
       data, _status_code, _headers = mcp_auth_authenticate_with_http_info(name, opts)
@@ -1497,9 +1497,9 @@ module OpencodeClient
 
     # Authenticate MCP OAuth
     # Start OAuth flow and wait for callback (opens browser)
-    # @param name [String] 
+    # @param name [String]
     # @param [Hash] opts the optional parameters
-    # @option opts [String] :directory 
+    # @option opts [String] :directory
     # @return [Array<(MCPStatus, Integer, Hash)>] MCPStatus data, response status code and response headers
     def mcp_auth_authenticate_with_http_info(name, opts = {})
       if @api_client.config.debugging
@@ -1552,10 +1552,10 @@ module OpencodeClient
 
     # Complete MCP OAuth
     # Complete OAuth authentication for a Model Context Protocol (MCP) server using the authorization code.
-    # @param name [String] 
+    # @param name [String]
     # @param [Hash] opts the optional parameters
-    # @option opts [String] :directory 
-    # @option opts [McpAuthCallbackRequest] :mcp_auth_callback_request 
+    # @option opts [String] :directory
+    # @option opts [McpAuthCallbackRequest] :mcp_auth_callback_request
     # @return [MCPStatus]
     def mcp_auth_callback(name, opts = {})
       data, _status_code, _headers = mcp_auth_callback_with_http_info(name, opts)
@@ -1564,10 +1564,10 @@ module OpencodeClient
 
     # Complete MCP OAuth
     # Complete OAuth authentication for a Model Context Protocol (MCP) server using the authorization code.
-    # @param name [String] 
+    # @param name [String]
     # @param [Hash] opts the optional parameters
-    # @option opts [String] :directory 
-    # @option opts [McpAuthCallbackRequest] :mcp_auth_callback_request 
+    # @option opts [String] :directory
+    # @option opts [McpAuthCallbackRequest] :mcp_auth_callback_request
     # @return [Array<(MCPStatus, Integer, Hash)>] MCPStatus data, response status code and response headers
     def mcp_auth_callback_with_http_info(name, opts = {})
       if @api_client.config.debugging
@@ -1625,9 +1625,9 @@ module OpencodeClient
 
     # Remove MCP OAuth
     # Remove OAuth credentials for an MCP server
-    # @param name [String] 
+    # @param name [String]
     # @param [Hash] opts the optional parameters
-    # @option opts [String] :directory 
+    # @option opts [String] :directory
     # @return [McpAuthRemove200Response]
     def mcp_auth_remove(name, opts = {})
       data, _status_code, _headers = mcp_auth_remove_with_http_info(name, opts)
@@ -1636,9 +1636,9 @@ module OpencodeClient
 
     # Remove MCP OAuth
     # Remove OAuth credentials for an MCP server
-    # @param name [String] 
+    # @param name [String]
     # @param [Hash] opts the optional parameters
-    # @option opts [String] :directory 
+    # @option opts [String] :directory
     # @return [Array<(McpAuthRemove200Response, Integer, Hash)>] McpAuthRemove200Response data, response status code and response headers
     def mcp_auth_remove_with_http_info(name, opts = {})
       if @api_client.config.debugging
@@ -1691,9 +1691,9 @@ module OpencodeClient
 
     # Start MCP OAuth
     # Start OAuth authentication flow for a Model Context Protocol (MCP) server.
-    # @param name [String] 
+    # @param name [String]
     # @param [Hash] opts the optional parameters
-    # @option opts [String] :directory 
+    # @option opts [String] :directory
     # @return [McpAuthStart200Response]
     def mcp_auth_start(name, opts = {})
       data, _status_code, _headers = mcp_auth_start_with_http_info(name, opts)
@@ -1702,9 +1702,9 @@ module OpencodeClient
 
     # Start MCP OAuth
     # Start OAuth authentication flow for a Model Context Protocol (MCP) server.
-    # @param name [String] 
+    # @param name [String]
     # @param [Hash] opts the optional parameters
-    # @option opts [String] :directory 
+    # @option opts [String] :directory
     # @return [Array<(McpAuthStart200Response, Integer, Hash)>] McpAuthStart200Response data, response status code and response headers
     def mcp_auth_start_with_http_info(name, opts = {})
       if @api_client.config.debugging
@@ -1756,9 +1756,9 @@ module OpencodeClient
     end
 
     # Connect an MCP server
-    # @param name [String] 
+    # @param name [String]
     # @param [Hash] opts the optional parameters
-    # @option opts [String] :directory 
+    # @option opts [String] :directory
     # @return [Boolean]
     def mcp_connect(name, opts = {})
       data, _status_code, _headers = mcp_connect_with_http_info(name, opts)
@@ -1766,9 +1766,9 @@ module OpencodeClient
     end
 
     # Connect an MCP server
-    # @param name [String] 
+    # @param name [String]
     # @param [Hash] opts the optional parameters
-    # @option opts [String] :directory 
+    # @option opts [String] :directory
     # @return [Array<(Boolean, Integer, Hash)>] Boolean data, response status code and response headers
     def mcp_connect_with_http_info(name, opts = {})
       if @api_client.config.debugging
@@ -1820,9 +1820,9 @@ module OpencodeClient
     end
 
     # Disconnect an MCP server
-    # @param name [String] 
+    # @param name [String]
     # @param [Hash] opts the optional parameters
-    # @option opts [String] :directory 
+    # @option opts [String] :directory
     # @return [Boolean]
     def mcp_disconnect(name, opts = {})
       data, _status_code, _headers = mcp_disconnect_with_http_info(name, opts)
@@ -1830,9 +1830,9 @@ module OpencodeClient
     end
 
     # Disconnect an MCP server
-    # @param name [String] 
+    # @param name [String]
     # @param [Hash] opts the optional parameters
-    # @option opts [String] :directory 
+    # @option opts [String] :directory
     # @return [Array<(Boolean, Integer, Hash)>] Boolean data, response status code and response headers
     def mcp_disconnect_with_http_info(name, opts = {})
       if @api_client.config.debugging
@@ -1886,7 +1886,7 @@ module OpencodeClient
     # Get MCP status
     # Get the status of all Model Context Protocol (MCP) servers.
     # @param [Hash] opts the optional parameters
-    # @option opts [String] :directory 
+    # @option opts [String] :directory
     # @return [Hash<String, MCPStatus>]
     def mcp_status(opts = {})
       data, _status_code, _headers = mcp_status_with_http_info(opts)
@@ -1896,7 +1896,7 @@ module OpencodeClient
     # Get MCP status
     # Get the status of all Model Context Protocol (MCP) servers.
     # @param [Hash] opts the optional parameters
-    # @option opts [String] :directory 
+    # @option opts [String] :directory
     # @return [Array<(Hash<String, MCPStatus>, Integer, Hash)>] Hash<String, MCPStatus> data, response status code and response headers
     def mcp_status_with_http_info(opts = {})
       if @api_client.config.debugging
@@ -1948,7 +1948,7 @@ module OpencodeClient
     # @param message_id [String] Message ID
     # @param part_id [String] Part ID
     # @param [Hash] opts the optional parameters
-    # @option opts [String] :directory 
+    # @option opts [String] :directory
     # @return [Boolean]
     def part_delete(session_id, message_id, part_id, opts = {})
       data, _status_code, _headers = part_delete_with_http_info(session_id, message_id, part_id, opts)
@@ -1960,7 +1960,7 @@ module OpencodeClient
     # @param message_id [String] Message ID
     # @param part_id [String] Part ID
     # @param [Hash] opts the optional parameters
-    # @option opts [String] :directory 
+    # @option opts [String] :directory
     # @return [Array<(Boolean, Integer, Hash)>] Boolean data, response status code and response headers
     def part_delete_with_http_info(session_id, message_id, part_id, opts = {})
       if @api_client.config.debugging
@@ -2024,8 +2024,8 @@ module OpencodeClient
     # @param message_id [String] Message ID
     # @param part_id [String] Part ID
     # @param [Hash] opts the optional parameters
-    # @option opts [String] :directory 
-    # @option opts [Part] :part 
+    # @option opts [String] :directory
+    # @option opts [Part] :part
     # @return [Part]
     def part_update(session_id, message_id, part_id, opts = {})
       data, _status_code, _headers = part_update_with_http_info(session_id, message_id, part_id, opts)
@@ -2037,8 +2037,8 @@ module OpencodeClient
     # @param message_id [String] Message ID
     # @param part_id [String] Part ID
     # @param [Hash] opts the optional parameters
-    # @option opts [String] :directory 
-    # @option opts [Part] :part 
+    # @option opts [String] :directory
+    # @option opts [Part] :part
     # @return [Array<(Part, Integer, Hash)>] Part data, response status code and response headers
     def part_update_with_http_info(session_id, message_id, part_id, opts = {})
       if @api_client.config.debugging
@@ -2105,7 +2105,7 @@ module OpencodeClient
     # Get paths
     # Retrieve the current working directory and related path information for the OpenCode instance.
     # @param [Hash] opts the optional parameters
-    # @option opts [String] :directory 
+    # @option opts [String] :directory
     # @return [Path]
     def path_get(opts = {})
       data, _status_code, _headers = path_get_with_http_info(opts)
@@ -2115,7 +2115,7 @@ module OpencodeClient
     # Get paths
     # Retrieve the current working directory and related path information for the OpenCode instance.
     # @param [Hash] opts the optional parameters
-    # @option opts [String] :directory 
+    # @option opts [String] :directory
     # @return [Array<(Path, Integer, Hash)>] Path data, response status code and response headers
     def path_get_with_http_info(opts = {})
       if @api_client.config.debugging
@@ -2165,7 +2165,7 @@ module OpencodeClient
     # List pending permissions
     # Get all pending permission requests across all sessions.
     # @param [Hash] opts the optional parameters
-    # @option opts [String] :directory 
+    # @option opts [String] :directory
     # @return [Array<PermissionRequest>]
     def permission_list(opts = {})
       data, _status_code, _headers = permission_list_with_http_info(opts)
@@ -2175,7 +2175,7 @@ module OpencodeClient
     # List pending permissions
     # Get all pending permission requests across all sessions.
     # @param [Hash] opts the optional parameters
-    # @option opts [String] :directory 
+    # @option opts [String] :directory
     # @return [Array<(Array<PermissionRequest>, Integer, Hash)>] Array<PermissionRequest> data, response status code and response headers
     def permission_list_with_http_info(opts = {})
       if @api_client.config.debugging
@@ -2224,10 +2224,10 @@ module OpencodeClient
 
     # Respond to permission request
     # Approve or deny a permission request from the AI assistant.
-    # @param request_id [String] 
+    # @param request_id [String]
     # @param [Hash] opts the optional parameters
-    # @option opts [String] :directory 
-    # @option opts [PermissionReplyRequest] :permission_reply_request 
+    # @option opts [String] :directory
+    # @option opts [PermissionReplyRequest] :permission_reply_request
     # @return [Boolean]
     def permission_reply(request_id, opts = {})
       data, _status_code, _headers = permission_reply_with_http_info(request_id, opts)
@@ -2236,10 +2236,10 @@ module OpencodeClient
 
     # Respond to permission request
     # Approve or deny a permission request from the AI assistant.
-    # @param request_id [String] 
+    # @param request_id [String]
     # @param [Hash] opts the optional parameters
-    # @option opts [String] :directory 
-    # @option opts [PermissionReplyRequest] :permission_reply_request 
+    # @option opts [String] :directory
+    # @option opts [PermissionReplyRequest] :permission_reply_request
     # @return [Array<(Boolean, Integer, Hash)>] Boolean data, response status code and response headers
     def permission_reply_with_http_info(request_id, opts = {})
       if @api_client.config.debugging
@@ -2297,11 +2297,11 @@ module OpencodeClient
 
     # Respond to permission
     # Approve or deny a permission request from the AI assistant.
-    # @param session_id [String] 
-    # @param permission_id [String] 
+    # @param session_id [String]
+    # @param permission_id [String]
     # @param [Hash] opts the optional parameters
-    # @option opts [String] :directory 
-    # @option opts [PermissionRespondRequest] :permission_respond_request 
+    # @option opts [String] :directory
+    # @option opts [PermissionRespondRequest] :permission_respond_request
     # @return [Boolean]
     def permission_respond(session_id, permission_id, opts = {})
       data, _status_code, _headers = permission_respond_with_http_info(session_id, permission_id, opts)
@@ -2310,11 +2310,11 @@ module OpencodeClient
 
     # Respond to permission
     # Approve or deny a permission request from the AI assistant.
-    # @param session_id [String] 
-    # @param permission_id [String] 
+    # @param session_id [String]
+    # @param permission_id [String]
     # @param [Hash] opts the optional parameters
-    # @option opts [String] :directory 
-    # @option opts [PermissionRespondRequest] :permission_respond_request 
+    # @option opts [String] :directory
+    # @option opts [PermissionRespondRequest] :permission_respond_request
     # @return [Array<(Boolean, Integer, Hash)>] Boolean data, response status code and response headers
     def permission_respond_with_http_info(session_id, permission_id, opts = {})
       if @api_client.config.debugging
@@ -2377,7 +2377,7 @@ module OpencodeClient
     # Get current project
     # Retrieve the currently active project that OpenCode is working with.
     # @param [Hash] opts the optional parameters
-    # @option opts [String] :directory 
+    # @option opts [String] :directory
     # @return [Project]
     def project_current(opts = {})
       data, _status_code, _headers = project_current_with_http_info(opts)
@@ -2387,7 +2387,7 @@ module OpencodeClient
     # Get current project
     # Retrieve the currently active project that OpenCode is working with.
     # @param [Hash] opts the optional parameters
-    # @option opts [String] :directory 
+    # @option opts [String] :directory
     # @return [Array<(Project, Integer, Hash)>] Project data, response status code and response headers
     def project_current_with_http_info(opts = {})
       if @api_client.config.debugging
@@ -2437,7 +2437,7 @@ module OpencodeClient
     # List all projects
     # Get a list of projects that have been opened with OpenCode.
     # @param [Hash] opts the optional parameters
-    # @option opts [String] :directory 
+    # @option opts [String] :directory
     # @return [Array<Project>]
     def project_list(opts = {})
       data, _status_code, _headers = project_list_with_http_info(opts)
@@ -2447,7 +2447,7 @@ module OpencodeClient
     # List all projects
     # Get a list of projects that have been opened with OpenCode.
     # @param [Hash] opts the optional parameters
-    # @option opts [String] :directory 
+    # @option opts [String] :directory
     # @return [Array<(Array<Project>, Integer, Hash)>] Array<Project> data, response status code and response headers
     def project_list_with_http_info(opts = {})
       if @api_client.config.debugging
@@ -2496,10 +2496,10 @@ module OpencodeClient
 
     # Update project
     # Update project properties such as name, icon, and commands.
-    # @param project_id [String] 
+    # @param project_id [String]
     # @param [Hash] opts the optional parameters
-    # @option opts [String] :directory 
-    # @option opts [ProjectUpdateRequest] :project_update_request 
+    # @option opts [String] :directory
+    # @option opts [ProjectUpdateRequest] :project_update_request
     # @return [Project]
     def project_update(project_id, opts = {})
       data, _status_code, _headers = project_update_with_http_info(project_id, opts)
@@ -2508,10 +2508,10 @@ module OpencodeClient
 
     # Update project
     # Update project properties such as name, icon, and commands.
-    # @param project_id [String] 
+    # @param project_id [String]
     # @param [Hash] opts the optional parameters
-    # @option opts [String] :directory 
-    # @option opts [ProjectUpdateRequest] :project_update_request 
+    # @option opts [String] :directory
+    # @option opts [ProjectUpdateRequest] :project_update_request
     # @return [Array<(Project, Integer, Hash)>] Project data, response status code and response headers
     def project_update_with_http_info(project_id, opts = {})
       if @api_client.config.debugging
@@ -2570,7 +2570,7 @@ module OpencodeClient
     # Get provider auth methods
     # Retrieve available authentication methods for all AI providers.
     # @param [Hash] opts the optional parameters
-    # @option opts [String] :directory 
+    # @option opts [String] :directory
     # @return [Hash<String, Array<ProviderAuthMethod>>]
     def provider_auth(opts = {})
       data, _status_code, _headers = provider_auth_with_http_info(opts)
@@ -2580,7 +2580,7 @@ module OpencodeClient
     # Get provider auth methods
     # Retrieve available authentication methods for all AI providers.
     # @param [Hash] opts the optional parameters
-    # @option opts [String] :directory 
+    # @option opts [String] :directory
     # @return [Array<(Hash<String, Array<ProviderAuthMethod>>, Integer, Hash)>] Hash<String, Array<ProviderAuthMethod>> data, response status code and response headers
     def provider_auth_with_http_info(opts = {})
       if @api_client.config.debugging
@@ -2630,7 +2630,7 @@ module OpencodeClient
     # List providers
     # Get a list of all available AI providers, including both available and connected ones.
     # @param [Hash] opts the optional parameters
-    # @option opts [String] :directory 
+    # @option opts [String] :directory
     # @return [ProviderList200Response]
     def provider_list(opts = {})
       data, _status_code, _headers = provider_list_with_http_info(opts)
@@ -2640,7 +2640,7 @@ module OpencodeClient
     # List providers
     # Get a list of all available AI providers, including both available and connected ones.
     # @param [Hash] opts the optional parameters
-    # @option opts [String] :directory 
+    # @option opts [String] :directory
     # @return [Array<(ProviderList200Response, Integer, Hash)>] ProviderList200Response data, response status code and response headers
     def provider_list_with_http_info(opts = {})
       if @api_client.config.debugging
@@ -2691,8 +2691,8 @@ module OpencodeClient
     # Initiate OAuth authorization for a specific AI provider to get an authorization URL.
     # @param provider_id [String] Provider ID
     # @param [Hash] opts the optional parameters
-    # @option opts [String] :directory 
-    # @option opts [ProviderOauthAuthorizeRequest] :provider_oauth_authorize_request 
+    # @option opts [String] :directory
+    # @option opts [ProviderOauthAuthorizeRequest] :provider_oauth_authorize_request
     # @return [ProviderAuthAuthorization]
     def provider_oauth_authorize(provider_id, opts = {})
       data, _status_code, _headers = provider_oauth_authorize_with_http_info(provider_id, opts)
@@ -2703,8 +2703,8 @@ module OpencodeClient
     # Initiate OAuth authorization for a specific AI provider to get an authorization URL.
     # @param provider_id [String] Provider ID
     # @param [Hash] opts the optional parameters
-    # @option opts [String] :directory 
-    # @option opts [ProviderOauthAuthorizeRequest] :provider_oauth_authorize_request 
+    # @option opts [String] :directory
+    # @option opts [ProviderOauthAuthorizeRequest] :provider_oauth_authorize_request
     # @return [Array<(ProviderAuthAuthorization, Integer, Hash)>] ProviderAuthAuthorization data, response status code and response headers
     def provider_oauth_authorize_with_http_info(provider_id, opts = {})
       if @api_client.config.debugging
@@ -2764,8 +2764,8 @@ module OpencodeClient
     # Handle the OAuth callback from a provider after user authorization.
     # @param provider_id [String] Provider ID
     # @param [Hash] opts the optional parameters
-    # @option opts [String] :directory 
-    # @option opts [ProviderOauthCallbackRequest] :provider_oauth_callback_request 
+    # @option opts [String] :directory
+    # @option opts [ProviderOauthCallbackRequest] :provider_oauth_callback_request
     # @return [Boolean]
     def provider_oauth_callback(provider_id, opts = {})
       data, _status_code, _headers = provider_oauth_callback_with_http_info(provider_id, opts)
@@ -2776,8 +2776,8 @@ module OpencodeClient
     # Handle the OAuth callback from a provider after user authorization.
     # @param provider_id [String] Provider ID
     # @param [Hash] opts the optional parameters
-    # @option opts [String] :directory 
-    # @option opts [ProviderOauthCallbackRequest] :provider_oauth_callback_request 
+    # @option opts [String] :directory
+    # @option opts [ProviderOauthCallbackRequest] :provider_oauth_callback_request
     # @return [Array<(Boolean, Integer, Hash)>] Boolean data, response status code and response headers
     def provider_oauth_callback_with_http_info(provider_id, opts = {})
       if @api_client.config.debugging
@@ -2835,9 +2835,9 @@ module OpencodeClient
 
     # Connect to PTY session
     # Establish a WebSocket connection to interact with a pseudo-terminal (PTY) session in real-time.
-    # @param pty_id [String] 
+    # @param pty_id [String]
     # @param [Hash] opts the optional parameters
-    # @option opts [String] :directory 
+    # @option opts [String] :directory
     # @return [Boolean]
     def pty_connect(pty_id, opts = {})
       data, _status_code, _headers = pty_connect_with_http_info(pty_id, opts)
@@ -2846,9 +2846,9 @@ module OpencodeClient
 
     # Connect to PTY session
     # Establish a WebSocket connection to interact with a pseudo-terminal (PTY) session in real-time.
-    # @param pty_id [String] 
+    # @param pty_id [String]
     # @param [Hash] opts the optional parameters
-    # @option opts [String] :directory 
+    # @option opts [String] :directory
     # @return [Array<(Boolean, Integer, Hash)>] Boolean data, response status code and response headers
     def pty_connect_with_http_info(pty_id, opts = {})
       if @api_client.config.debugging
@@ -2902,8 +2902,8 @@ module OpencodeClient
     # Create PTY session
     # Create a new pseudo-terminal (PTY) session for running shell commands and processes.
     # @param [Hash] opts the optional parameters
-    # @option opts [String] :directory 
-    # @option opts [PtyCreateRequest] :pty_create_request 
+    # @option opts [String] :directory
+    # @option opts [PtyCreateRequest] :pty_create_request
     # @return [Pty]
     def pty_create(opts = {})
       data, _status_code, _headers = pty_create_with_http_info(opts)
@@ -2913,8 +2913,8 @@ module OpencodeClient
     # Create PTY session
     # Create a new pseudo-terminal (PTY) session for running shell commands and processes.
     # @param [Hash] opts the optional parameters
-    # @option opts [String] :directory 
-    # @option opts [PtyCreateRequest] :pty_create_request 
+    # @option opts [String] :directory
+    # @option opts [PtyCreateRequest] :pty_create_request
     # @return [Array<(Pty, Integer, Hash)>] Pty data, response status code and response headers
     def pty_create_with_http_info(opts = {})
       if @api_client.config.debugging
@@ -2968,9 +2968,9 @@ module OpencodeClient
 
     # Get PTY session
     # Retrieve detailed information about a specific pseudo-terminal (PTY) session.
-    # @param pty_id [String] 
+    # @param pty_id [String]
     # @param [Hash] opts the optional parameters
-    # @option opts [String] :directory 
+    # @option opts [String] :directory
     # @return [Pty]
     def pty_get(pty_id, opts = {})
       data, _status_code, _headers = pty_get_with_http_info(pty_id, opts)
@@ -2979,9 +2979,9 @@ module OpencodeClient
 
     # Get PTY session
     # Retrieve detailed information about a specific pseudo-terminal (PTY) session.
-    # @param pty_id [String] 
+    # @param pty_id [String]
     # @param [Hash] opts the optional parameters
-    # @option opts [String] :directory 
+    # @option opts [String] :directory
     # @return [Array<(Pty, Integer, Hash)>] Pty data, response status code and response headers
     def pty_get_with_http_info(pty_id, opts = {})
       if @api_client.config.debugging
@@ -3035,7 +3035,7 @@ module OpencodeClient
     # List PTY sessions
     # Get a list of all active pseudo-terminal (PTY) sessions managed by OpenCode.
     # @param [Hash] opts the optional parameters
-    # @option opts [String] :directory 
+    # @option opts [String] :directory
     # @return [Array<Pty>]
     def pty_list(opts = {})
       data, _status_code, _headers = pty_list_with_http_info(opts)
@@ -3045,7 +3045,7 @@ module OpencodeClient
     # List PTY sessions
     # Get a list of all active pseudo-terminal (PTY) sessions managed by OpenCode.
     # @param [Hash] opts the optional parameters
-    # @option opts [String] :directory 
+    # @option opts [String] :directory
     # @return [Array<(Array<Pty>, Integer, Hash)>] Array<Pty> data, response status code and response headers
     def pty_list_with_http_info(opts = {})
       if @api_client.config.debugging
@@ -3094,9 +3094,9 @@ module OpencodeClient
 
     # Remove PTY session
     # Remove and terminate a specific pseudo-terminal (PTY) session.
-    # @param pty_id [String] 
+    # @param pty_id [String]
     # @param [Hash] opts the optional parameters
-    # @option opts [String] :directory 
+    # @option opts [String] :directory
     # @return [Boolean]
     def pty_remove(pty_id, opts = {})
       data, _status_code, _headers = pty_remove_with_http_info(pty_id, opts)
@@ -3105,9 +3105,9 @@ module OpencodeClient
 
     # Remove PTY session
     # Remove and terminate a specific pseudo-terminal (PTY) session.
-    # @param pty_id [String] 
+    # @param pty_id [String]
     # @param [Hash] opts the optional parameters
-    # @option opts [String] :directory 
+    # @option opts [String] :directory
     # @return [Array<(Boolean, Integer, Hash)>] Boolean data, response status code and response headers
     def pty_remove_with_http_info(pty_id, opts = {})
       if @api_client.config.debugging
@@ -3160,10 +3160,10 @@ module OpencodeClient
 
     # Update PTY session
     # Update properties of an existing pseudo-terminal (PTY) session.
-    # @param pty_id [String] 
+    # @param pty_id [String]
     # @param [Hash] opts the optional parameters
-    # @option opts [String] :directory 
-    # @option opts [PtyUpdateRequest] :pty_update_request 
+    # @option opts [String] :directory
+    # @option opts [PtyUpdateRequest] :pty_update_request
     # @return [Pty]
     def pty_update(pty_id, opts = {})
       data, _status_code, _headers = pty_update_with_http_info(pty_id, opts)
@@ -3172,10 +3172,10 @@ module OpencodeClient
 
     # Update PTY session
     # Update properties of an existing pseudo-terminal (PTY) session.
-    # @param pty_id [String] 
+    # @param pty_id [String]
     # @param [Hash] opts the optional parameters
-    # @option opts [String] :directory 
-    # @option opts [PtyUpdateRequest] :pty_update_request 
+    # @option opts [String] :directory
+    # @option opts [PtyUpdateRequest] :pty_update_request
     # @return [Array<(Pty, Integer, Hash)>] Pty data, response status code and response headers
     def pty_update_with_http_info(pty_id, opts = {})
       if @api_client.config.debugging
@@ -3234,7 +3234,7 @@ module OpencodeClient
     # List pending questions
     # Get all pending question requests across all sessions.
     # @param [Hash] opts the optional parameters
-    # @option opts [String] :directory 
+    # @option opts [String] :directory
     # @return [Array<QuestionRequest>]
     def question_list(opts = {})
       data, _status_code, _headers = question_list_with_http_info(opts)
@@ -3244,7 +3244,7 @@ module OpencodeClient
     # List pending questions
     # Get all pending question requests across all sessions.
     # @param [Hash] opts the optional parameters
-    # @option opts [String] :directory 
+    # @option opts [String] :directory
     # @return [Array<(Array<QuestionRequest>, Integer, Hash)>] Array<QuestionRequest> data, response status code and response headers
     def question_list_with_http_info(opts = {})
       if @api_client.config.debugging
@@ -3293,9 +3293,9 @@ module OpencodeClient
 
     # Reject question request
     # Reject a question request from the AI assistant.
-    # @param request_id [String] 
+    # @param request_id [String]
     # @param [Hash] opts the optional parameters
-    # @option opts [String] :directory 
+    # @option opts [String] :directory
     # @return [Boolean]
     def question_reject(request_id, opts = {})
       data, _status_code, _headers = question_reject_with_http_info(request_id, opts)
@@ -3304,9 +3304,9 @@ module OpencodeClient
 
     # Reject question request
     # Reject a question request from the AI assistant.
-    # @param request_id [String] 
+    # @param request_id [String]
     # @param [Hash] opts the optional parameters
-    # @option opts [String] :directory 
+    # @option opts [String] :directory
     # @return [Array<(Boolean, Integer, Hash)>] Boolean data, response status code and response headers
     def question_reject_with_http_info(request_id, opts = {})
       if @api_client.config.debugging
@@ -3359,10 +3359,10 @@ module OpencodeClient
 
     # Reply to question request
     # Provide answers to a question request from the AI assistant.
-    # @param request_id [String] 
+    # @param request_id [String]
     # @param [Hash] opts the optional parameters
-    # @option opts [String] :directory 
-    # @option opts [QuestionReplyRequest] :question_reply_request 
+    # @option opts [String] :directory
+    # @option opts [QuestionReplyRequest] :question_reply_request
     # @return [Boolean]
     def question_reply(request_id, opts = {})
       data, _status_code, _headers = question_reply_with_http_info(request_id, opts)
@@ -3371,10 +3371,10 @@ module OpencodeClient
 
     # Reply to question request
     # Provide answers to a question request from the AI assistant.
-    # @param request_id [String] 
+    # @param request_id [String]
     # @param [Hash] opts the optional parameters
-    # @option opts [String] :directory 
-    # @option opts [QuestionReplyRequest] :question_reply_request 
+    # @option opts [String] :directory
+    # @option opts [QuestionReplyRequest] :question_reply_request
     # @return [Array<(Boolean, Integer, Hash)>] Boolean data, response status code and response headers
     def question_reply_with_http_info(request_id, opts = {})
       if @api_client.config.debugging
@@ -3432,9 +3432,9 @@ module OpencodeClient
 
     # Abort session
     # Abort an active session and stop any ongoing AI processing or command execution.
-    # @param session_id [String] 
+    # @param session_id [String]
     # @param [Hash] opts the optional parameters
-    # @option opts [String] :directory 
+    # @option opts [String] :directory
     # @return [Boolean]
     def session_abort(session_id, opts = {})
       data, _status_code, _headers = session_abort_with_http_info(session_id, opts)
@@ -3443,9 +3443,9 @@ module OpencodeClient
 
     # Abort session
     # Abort an active session and stop any ongoing AI processing or command execution.
-    # @param session_id [String] 
+    # @param session_id [String]
     # @param [Hash] opts the optional parameters
-    # @option opts [String] :directory 
+    # @option opts [String] :directory
     # @return [Array<(Boolean, Integer, Hash)>] Boolean data, response status code and response headers
     def session_abort_with_http_info(session_id, opts = {})
       if @api_client.config.debugging
@@ -3500,8 +3500,8 @@ module OpencodeClient
     # Send a new command to a session for execution by the AI assistant.
     # @param session_id [String] Session ID
     # @param [Hash] opts the optional parameters
-    # @option opts [String] :directory 
-    # @option opts [SessionCommandRequest] :session_command_request 
+    # @option opts [String] :directory
+    # @option opts [SessionCommandRequest] :session_command_request
     # @return [SessionPrompt200Response]
     def session_command(session_id, opts = {})
       data, _status_code, _headers = session_command_with_http_info(session_id, opts)
@@ -3512,8 +3512,8 @@ module OpencodeClient
     # Send a new command to a session for execution by the AI assistant.
     # @param session_id [String] Session ID
     # @param [Hash] opts the optional parameters
-    # @option opts [String] :directory 
-    # @option opts [SessionCommandRequest] :session_command_request 
+    # @option opts [String] :directory
+    # @option opts [SessionCommandRequest] :session_command_request
     # @return [Array<(SessionPrompt200Response, Integer, Hash)>] SessionPrompt200Response data, response status code and response headers
     def session_command_with_http_info(session_id, opts = {})
       if @api_client.config.debugging
@@ -3572,8 +3572,8 @@ module OpencodeClient
     # Create session
     # Create a new OpenCode session for interacting with AI assistants and managing conversations.
     # @param [Hash] opts the optional parameters
-    # @option opts [String] :directory 
-    # @option opts [SessionCreateRequest] :session_create_request 
+    # @option opts [String] :directory
+    # @option opts [SessionCreateRequest] :session_create_request
     # @return [Session]
     def session_create(opts = {})
       data, _status_code, _headers = session_create_with_http_info(opts)
@@ -3583,8 +3583,8 @@ module OpencodeClient
     # Create session
     # Create a new OpenCode session for interacting with AI assistants and managing conversations.
     # @param [Hash] opts the optional parameters
-    # @option opts [String] :directory 
-    # @option opts [SessionCreateRequest] :session_create_request 
+    # @option opts [String] :directory
+    # @option opts [SessionCreateRequest] :session_create_request
     # @return [Array<(Session, Integer, Hash)>] Session data, response status code and response headers
     def session_create_with_http_info(opts = {})
       if @api_client.config.debugging
@@ -3638,9 +3638,9 @@ module OpencodeClient
 
     # Delete session
     # Delete a session and permanently remove all associated data, including messages and history.
-    # @param session_id [String] 
+    # @param session_id [String]
     # @param [Hash] opts the optional parameters
-    # @option opts [String] :directory 
+    # @option opts [String] :directory
     # @return [Boolean]
     def session_delete(session_id, opts = {})
       data, _status_code, _headers = session_delete_with_http_info(session_id, opts)
@@ -3649,9 +3649,9 @@ module OpencodeClient
 
     # Delete session
     # Delete a session and permanently remove all associated data, including messages and history.
-    # @param session_id [String] 
+    # @param session_id [String]
     # @param [Hash] opts the optional parameters
-    # @option opts [String] :directory 
+    # @option opts [String] :directory
     # @return [Array<(Boolean, Integer, Hash)>] Boolean data, response status code and response headers
     def session_delete_with_http_info(session_id, opts = {})
       if @api_client.config.debugging
@@ -3709,10 +3709,10 @@ module OpencodeClient
 
     # Get message diff
     # Get the file changes (diff) that resulted from a specific user message in the session.
-    # @param session_id [String] 
+    # @param session_id [String]
     # @param [Hash] opts the optional parameters
-    # @option opts [String] :directory 
-    # @option opts [String] :message_id 
+    # @option opts [String] :directory
+    # @option opts [String] :message_id
     # @return [Array<FileDiff>]
     def session_diff(session_id, opts = {})
       data, _status_code, _headers = session_diff_with_http_info(session_id, opts)
@@ -3721,10 +3721,10 @@ module OpencodeClient
 
     # Get message diff
     # Get the file changes (diff) that resulted from a specific user message in the session.
-    # @param session_id [String] 
+    # @param session_id [String]
     # @param [Hash] opts the optional parameters
-    # @option opts [String] :directory 
-    # @option opts [String] :message_id 
+    # @option opts [String] :directory
+    # @option opts [String] :message_id
     # @return [Array<(Array<FileDiff>, Integer, Hash)>] Array<FileDiff> data, response status code and response headers
     def session_diff_with_http_info(session_id, opts = {})
       if @api_client.config.debugging
@@ -3788,10 +3788,10 @@ module OpencodeClient
 
     # Fork session
     # Create a new session by forking an existing session at a specific message point.
-    # @param session_id [String] 
+    # @param session_id [String]
     # @param [Hash] opts the optional parameters
-    # @option opts [String] :directory 
-    # @option opts [SessionForkRequest] :session_fork_request 
+    # @option opts [String] :directory
+    # @option opts [SessionForkRequest] :session_fork_request
     # @return [Session]
     def session_fork(session_id, opts = {})
       data, _status_code, _headers = session_fork_with_http_info(session_id, opts)
@@ -3800,10 +3800,10 @@ module OpencodeClient
 
     # Fork session
     # Create a new session by forking an existing session at a specific message point.
-    # @param session_id [String] 
+    # @param session_id [String]
     # @param [Hash] opts the optional parameters
-    # @option opts [String] :directory 
-    # @option opts [SessionForkRequest] :session_fork_request 
+    # @option opts [String] :directory
+    # @option opts [SessionForkRequest] :session_fork_request
     # @return [Array<(Session, Integer, Hash)>] Session data, response status code and response headers
     def session_fork_with_http_info(session_id, opts = {})
       if @api_client.config.debugging
@@ -3868,8 +3868,8 @@ module OpencodeClient
     # Analyze the current application and create an AGENTS.md file with project-specific agent configurations.
     # @param session_id [String] Session ID
     # @param [Hash] opts the optional parameters
-    # @option opts [String] :directory 
-    # @option opts [SessionInitRequest] :session_init_request 
+    # @option opts [String] :directory
+    # @option opts [SessionInitRequest] :session_init_request
     # @return [Boolean]
     def session_init(session_id, opts = {})
       data, _status_code, _headers = session_init_with_http_info(session_id, opts)
@@ -3880,8 +3880,8 @@ module OpencodeClient
     # Analyze the current application and create an AGENTS.md file with project-specific agent configurations.
     # @param session_id [String] Session ID
     # @param [Hash] opts the optional parameters
-    # @option opts [String] :directory 
-    # @option opts [SessionInitRequest] :session_init_request 
+    # @option opts [String] :directory
+    # @option opts [SessionInitRequest] :session_init_request
     # @return [Array<(Boolean, Integer, Hash)>] Boolean data, response status code and response headers
     def session_init_with_http_info(session_id, opts = {})
       if @api_client.config.debugging
@@ -4014,7 +4014,7 @@ module OpencodeClient
     # @param session_id [String] Session ID
     # @param message_id [String] Message ID
     # @param [Hash] opts the optional parameters
-    # @option opts [String] :directory 
+    # @option opts [String] :directory
     # @return [SessionMessages200ResponseInner]
     def session_message(session_id, message_id, opts = {})
       data, _status_code, _headers = session_message_with_http_info(session_id, message_id, opts)
@@ -4026,7 +4026,7 @@ module OpencodeClient
     # @param session_id [String] Session ID
     # @param message_id [String] Message ID
     # @param [Hash] opts the optional parameters
-    # @option opts [String] :directory 
+    # @option opts [String] :directory
     # @return [Array<(SessionMessages200ResponseInner, Integer, Hash)>] SessionMessages200ResponseInner data, response status code and response headers
     def session_message_with_http_info(session_id, message_id, opts = {})
       if @api_client.config.debugging
@@ -4085,8 +4085,8 @@ module OpencodeClient
     # Retrieve all messages in a session, including user prompts and AI responses.
     # @param session_id [String] Session ID
     # @param [Hash] opts the optional parameters
-    # @option opts [String] :directory 
-    # @option opts [Float] :limit 
+    # @option opts [String] :directory
+    # @option opts [Float] :limit
     # @return [Array<SessionMessages200ResponseInner>]
     def session_messages(session_id, opts = {})
       data, _status_code, _headers = session_messages_with_http_info(session_id, opts)
@@ -4097,8 +4097,8 @@ module OpencodeClient
     # Retrieve all messages in a session, including user prompts and AI responses.
     # @param session_id [String] Session ID
     # @param [Hash] opts the optional parameters
-    # @option opts [String] :directory 
-    # @option opts [Float] :limit 
+    # @option opts [String] :directory
+    # @option opts [Float] :limit
     # @return [Array<(Array<SessionMessages200ResponseInner>, Integer, Hash)>] Array<SessionMessages200ResponseInner> data, response status code and response headers
     def session_messages_with_http_info(session_id, opts = {})
       if @api_client.config.debugging
@@ -4154,8 +4154,8 @@ module OpencodeClient
     # Create and send a new message to a session, streaming the AI response.
     # @param session_id [String] Session ID
     # @param [Hash] opts the optional parameters
-    # @option opts [String] :directory 
-    # @option opts [SessionPromptRequest] :session_prompt_request 
+    # @option opts [String] :directory
+    # @option opts [SessionPromptRequest] :session_prompt_request
     # @return [SessionPrompt200Response]
     def session_prompt(session_id, opts = {})
       data, _status_code, _headers = session_prompt_with_http_info(session_id, opts)
@@ -4166,8 +4166,8 @@ module OpencodeClient
     # Create and send a new message to a session, streaming the AI response.
     # @param session_id [String] Session ID
     # @param [Hash] opts the optional parameters
-    # @option opts [String] :directory 
-    # @option opts [SessionPromptRequest] :session_prompt_request 
+    # @option opts [String] :directory
+    # @option opts [SessionPromptRequest] :session_prompt_request
     # @return [Array<(SessionPrompt200Response, Integer, Hash)>] SessionPrompt200Response data, response status code and response headers
     def session_prompt_with_http_info(session_id, opts = {})
       if @api_client.config.debugging
@@ -4227,8 +4227,8 @@ module OpencodeClient
     # Create and send a new message to a session asynchronously, starting the session if needed and returning immediately.
     # @param session_id [String] Session ID
     # @param [Hash] opts the optional parameters
-    # @option opts [String] :directory 
-    # @option opts [SessionPromptRequest] :session_prompt_request 
+    # @option opts [String] :directory
+    # @option opts [SessionPromptRequest] :session_prompt_request
     # @return [nil]
     def session_prompt_async(session_id, opts = {})
       session_prompt_async_with_http_info(session_id, opts)
@@ -4239,8 +4239,8 @@ module OpencodeClient
     # Create and send a new message to a session asynchronously, starting the session if needed and returning immediately.
     # @param session_id [String] Session ID
     # @param [Hash] opts the optional parameters
-    # @option opts [String] :directory 
-    # @option opts [SessionPromptRequest] :session_prompt_request 
+    # @option opts [String] :directory
+    # @option opts [SessionPromptRequest] :session_prompt_request
     # @return [Array<(nil, Integer, Hash)>] nil, response status code and response headers
     def session_prompt_async_with_http_info(session_id, opts = {})
       if @api_client.config.debugging
@@ -4298,10 +4298,10 @@ module OpencodeClient
 
     # Revert message
     # Revert a specific message in a session, undoing its effects and restoring the previous state.
-    # @param session_id [String] 
+    # @param session_id [String]
     # @param [Hash] opts the optional parameters
-    # @option opts [String] :directory 
-    # @option opts [SessionRevertRequest] :session_revert_request 
+    # @option opts [String] :directory
+    # @option opts [SessionRevertRequest] :session_revert_request
     # @return [Session]
     def session_revert(session_id, opts = {})
       data, _status_code, _headers = session_revert_with_http_info(session_id, opts)
@@ -4310,10 +4310,10 @@ module OpencodeClient
 
     # Revert message
     # Revert a specific message in a session, undoing its effects and restoring the previous state.
-    # @param session_id [String] 
+    # @param session_id [String]
     # @param [Hash] opts the optional parameters
-    # @option opts [String] :directory 
-    # @option opts [SessionRevertRequest] :session_revert_request 
+    # @option opts [String] :directory
+    # @option opts [SessionRevertRequest] :session_revert_request
     # @return [Array<(Session, Integer, Hash)>] Session data, response status code and response headers
     def session_revert_with_http_info(session_id, opts = {})
       if @api_client.config.debugging
@@ -4371,9 +4371,9 @@ module OpencodeClient
 
     # Share session
     # Create a shareable link for a session, allowing others to view the conversation.
-    # @param session_id [String] 
+    # @param session_id [String]
     # @param [Hash] opts the optional parameters
-    # @option opts [String] :directory 
+    # @option opts [String] :directory
     # @return [Session]
     def session_share(session_id, opts = {})
       data, _status_code, _headers = session_share_with_http_info(session_id, opts)
@@ -4382,9 +4382,9 @@ module OpencodeClient
 
     # Share session
     # Create a shareable link for a session, allowing others to view the conversation.
-    # @param session_id [String] 
+    # @param session_id [String]
     # @param [Hash] opts the optional parameters
-    # @option opts [String] :directory 
+    # @option opts [String] :directory
     # @return [Array<(Session, Integer, Hash)>] Session data, response status code and response headers
     def session_share_with_http_info(session_id, opts = {})
       if @api_client.config.debugging
@@ -4439,8 +4439,8 @@ module OpencodeClient
     # Execute a shell command within the session context and return the AI's response.
     # @param session_id [String] Session ID
     # @param [Hash] opts the optional parameters
-    # @option opts [String] :directory 
-    # @option opts [SessionShellRequest] :session_shell_request 
+    # @option opts [String] :directory
+    # @option opts [SessionShellRequest] :session_shell_request
     # @return [AssistantMessage]
     def session_shell(session_id, opts = {})
       data, _status_code, _headers = session_shell_with_http_info(session_id, opts)
@@ -4451,8 +4451,8 @@ module OpencodeClient
     # Execute a shell command within the session context and return the AI&#39;s response.
     # @param session_id [String] Session ID
     # @param [Hash] opts the optional parameters
-    # @option opts [String] :directory 
-    # @option opts [SessionShellRequest] :session_shell_request 
+    # @option opts [String] :directory
+    # @option opts [SessionShellRequest] :session_shell_request
     # @return [Array<(AssistantMessage, Integer, Hash)>] AssistantMessage data, response status code and response headers
     def session_shell_with_http_info(session_id, opts = {})
       if @api_client.config.debugging
@@ -4511,7 +4511,7 @@ module OpencodeClient
     # Get session status
     # Retrieve the current status of all sessions, including active, idle, and completed states.
     # @param [Hash] opts the optional parameters
-    # @option opts [String] :directory 
+    # @option opts [String] :directory
     # @return [Hash<String, SessionStatus>]
     def session_status(opts = {})
       data, _status_code, _headers = session_status_with_http_info(opts)
@@ -4521,7 +4521,7 @@ module OpencodeClient
     # Get session status
     # Retrieve the current status of all sessions, including active, idle, and completed states.
     # @param [Hash] opts the optional parameters
-    # @option opts [String] :directory 
+    # @option opts [String] :directory
     # @return [Array<(Hash<String, SessionStatus>, Integer, Hash)>] Hash<String, SessionStatus> data, response status code and response headers
     def session_status_with_http_info(opts = {})
       if @api_client.config.debugging
@@ -4572,8 +4572,8 @@ module OpencodeClient
     # Generate a concise summary of the session using AI compaction to preserve key information.
     # @param session_id [String] Session ID
     # @param [Hash] opts the optional parameters
-    # @option opts [String] :directory 
-    # @option opts [SessionSummarizeRequest] :session_summarize_request 
+    # @option opts [String] :directory
+    # @option opts [SessionSummarizeRequest] :session_summarize_request
     # @return [Boolean]
     def session_summarize(session_id, opts = {})
       data, _status_code, _headers = session_summarize_with_http_info(session_id, opts)
@@ -4584,8 +4584,8 @@ module OpencodeClient
     # Generate a concise summary of the session using AI compaction to preserve key information.
     # @param session_id [String] Session ID
     # @param [Hash] opts the optional parameters
-    # @option opts [String] :directory 
-    # @option opts [SessionSummarizeRequest] :session_summarize_request 
+    # @option opts [String] :directory
+    # @option opts [SessionSummarizeRequest] :session_summarize_request
     # @return [Array<(Boolean, Integer, Hash)>] Boolean data, response status code and response headers
     def session_summarize_with_http_info(session_id, opts = {})
       if @api_client.config.debugging
@@ -4645,7 +4645,7 @@ module OpencodeClient
     # Retrieve the todo list associated with a specific session, showing tasks and action items.
     # @param session_id [String] Session ID
     # @param [Hash] opts the optional parameters
-    # @option opts [String] :directory 
+    # @option opts [String] :directory
     # @return [Array<Todo>]
     def session_todo(session_id, opts = {})
       data, _status_code, _headers = session_todo_with_http_info(session_id, opts)
@@ -4656,7 +4656,7 @@ module OpencodeClient
     # Retrieve the todo list associated with a specific session, showing tasks and action items.
     # @param session_id [String] Session ID
     # @param [Hash] opts the optional parameters
-    # @option opts [String] :directory 
+    # @option opts [String] :directory
     # @return [Array<(Array<Todo>, Integer, Hash)>] Array<Todo> data, response status code and response headers
     def session_todo_with_http_info(session_id, opts = {})
       if @api_client.config.debugging
@@ -4709,9 +4709,9 @@ module OpencodeClient
 
     # Restore reverted messages
     # Restore all previously reverted messages in a session.
-    # @param session_id [String] 
+    # @param session_id [String]
     # @param [Hash] opts the optional parameters
-    # @option opts [String] :directory 
+    # @option opts [String] :directory
     # @return [Session]
     def session_unrevert(session_id, opts = {})
       data, _status_code, _headers = session_unrevert_with_http_info(session_id, opts)
@@ -4720,9 +4720,9 @@ module OpencodeClient
 
     # Restore reverted messages
     # Restore all previously reverted messages in a session.
-    # @param session_id [String] 
+    # @param session_id [String]
     # @param [Hash] opts the optional parameters
-    # @option opts [String] :directory 
+    # @option opts [String] :directory
     # @return [Array<(Session, Integer, Hash)>] Session data, response status code and response headers
     def session_unrevert_with_http_info(session_id, opts = {})
       if @api_client.config.debugging
@@ -4775,9 +4775,9 @@ module OpencodeClient
 
     # Unshare session
     # Remove the shareable link for a session, making it private again.
-    # @param session_id [String] 
+    # @param session_id [String]
     # @param [Hash] opts the optional parameters
-    # @option opts [String] :directory 
+    # @option opts [String] :directory
     # @return [Session]
     def session_unshare(session_id, opts = {})
       data, _status_code, _headers = session_unshare_with_http_info(session_id, opts)
@@ -4786,9 +4786,9 @@ module OpencodeClient
 
     # Unshare session
     # Remove the shareable link for a session, making it private again.
-    # @param session_id [String] 
+    # @param session_id [String]
     # @param [Hash] opts the optional parameters
-    # @option opts [String] :directory 
+    # @option opts [String] :directory
     # @return [Array<(Session, Integer, Hash)>] Session data, response status code and response headers
     def session_unshare_with_http_info(session_id, opts = {})
       if @api_client.config.debugging
@@ -4846,10 +4846,10 @@ module OpencodeClient
 
     # Update session
     # Update properties of an existing session, such as title or other metadata.
-    # @param session_id [String] 
+    # @param session_id [String]
     # @param [Hash] opts the optional parameters
-    # @option opts [String] :directory 
-    # @option opts [SessionUpdateRequest] :session_update_request 
+    # @option opts [String] :directory
+    # @option opts [SessionUpdateRequest] :session_update_request
     # @return [Session]
     def session_update(session_id, opts = {})
       data, _status_code, _headers = session_update_with_http_info(session_id, opts)
@@ -4858,10 +4858,10 @@ module OpencodeClient
 
     # Update session
     # Update properties of an existing session, such as title or other metadata.
-    # @param session_id [String] 
+    # @param session_id [String]
     # @param [Hash] opts the optional parameters
-    # @option opts [String] :directory 
-    # @option opts [SessionUpdateRequest] :session_update_request 
+    # @option opts [String] :directory
+    # @option opts [SessionUpdateRequest] :session_update_request
     # @return [Array<(Session, Integer, Hash)>] Session data, response status code and response headers
     def session_update_with_http_info(session_id, opts = {})
       if @api_client.config.debugging
@@ -4920,7 +4920,7 @@ module OpencodeClient
     # List tool IDs
     # Get a list of all available tool IDs, including both built-in tools and dynamically registered tools.
     # @param [Hash] opts the optional parameters
-    # @option opts [String] :directory 
+    # @option opts [String] :directory
     # @return [Array<String>]
     def tool_ids(opts = {})
       data, _status_code, _headers = tool_ids_with_http_info(opts)
@@ -4930,7 +4930,7 @@ module OpencodeClient
     # List tool IDs
     # Get a list of all available tool IDs, including both built-in tools and dynamically registered tools.
     # @param [Hash] opts the optional parameters
-    # @option opts [String] :directory 
+    # @option opts [String] :directory
     # @return [Array<(Array<String>, Integer, Hash)>] Array<String> data, response status code and response headers
     def tool_ids_with_http_info(opts = {})
       if @api_client.config.debugging
@@ -4979,10 +4979,10 @@ module OpencodeClient
 
     # List tools
     # Get a list of available tools with their JSON schema parameters for a specific provider and model combination.
-    # @param provider [String] 
-    # @param model [String] 
+    # @param provider [String]
+    # @param model [String]
     # @param [Hash] opts the optional parameters
-    # @option opts [String] :directory 
+    # @option opts [String] :directory
     # @return [Array<ToolListItem>]
     def tool_list(provider, model, opts = {})
       data, _status_code, _headers = tool_list_with_http_info(provider, model, opts)
@@ -4991,10 +4991,10 @@ module OpencodeClient
 
     # List tools
     # Get a list of available tools with their JSON schema parameters for a specific provider and model combination.
-    # @param provider [String] 
-    # @param model [String] 
+    # @param provider [String]
+    # @param model [String]
     # @param [Hash] opts the optional parameters
-    # @option opts [String] :directory 
+    # @option opts [String] :directory
     # @return [Array<(Array<ToolListItem>, Integer, Hash)>] Array<ToolListItem> data, response status code and response headers
     def tool_list_with_http_info(provider, model, opts = {})
       if @api_client.config.debugging
@@ -5054,8 +5054,8 @@ module OpencodeClient
     # Append TUI prompt
     # Append prompt to the TUI
     # @param [Hash] opts the optional parameters
-    # @option opts [String] :directory 
-    # @option opts [FindText200ResponseInnerPath] :find_text200_response_inner_path 
+    # @option opts [String] :directory
+    # @option opts [FindText200ResponseInnerPath] :find_text200_response_inner_path
     # @return [Boolean]
     def tui_append_prompt(opts = {})
       data, _status_code, _headers = tui_append_prompt_with_http_info(opts)
@@ -5065,8 +5065,8 @@ module OpencodeClient
     # Append TUI prompt
     # Append prompt to the TUI
     # @param [Hash] opts the optional parameters
-    # @option opts [String] :directory 
-    # @option opts [FindText200ResponseInnerPath] :find_text200_response_inner_path 
+    # @option opts [String] :directory
+    # @option opts [FindText200ResponseInnerPath] :find_text200_response_inner_path
     # @return [Array<(Boolean, Integer, Hash)>] Boolean data, response status code and response headers
     def tui_append_prompt_with_http_info(opts = {})
       if @api_client.config.debugging
@@ -5121,7 +5121,7 @@ module OpencodeClient
     # Clear TUI prompt
     # Clear the prompt
     # @param [Hash] opts the optional parameters
-    # @option opts [String] :directory 
+    # @option opts [String] :directory
     # @return [Boolean]
     def tui_clear_prompt(opts = {})
       data, _status_code, _headers = tui_clear_prompt_with_http_info(opts)
@@ -5131,7 +5131,7 @@ module OpencodeClient
     # Clear TUI prompt
     # Clear the prompt
     # @param [Hash] opts the optional parameters
-    # @option opts [String] :directory 
+    # @option opts [String] :directory
     # @return [Array<(Boolean, Integer, Hash)>] Boolean data, response status code and response headers
     def tui_clear_prompt_with_http_info(opts = {})
       if @api_client.config.debugging
@@ -5181,7 +5181,7 @@ module OpencodeClient
     # Get next TUI request
     # Retrieve the next TUI (Terminal User Interface) request from the queue for processing.
     # @param [Hash] opts the optional parameters
-    # @option opts [String] :directory 
+    # @option opts [String] :directory
     # @return [TuiControlNext200Response]
     def tui_control_next(opts = {})
       data, _status_code, _headers = tui_control_next_with_http_info(opts)
@@ -5191,7 +5191,7 @@ module OpencodeClient
     # Get next TUI request
     # Retrieve the next TUI (Terminal User Interface) request from the queue for processing.
     # @param [Hash] opts the optional parameters
-    # @option opts [String] :directory 
+    # @option opts [String] :directory
     # @return [Array<(TuiControlNext200Response, Integer, Hash)>] TuiControlNext200Response data, response status code and response headers
     def tui_control_next_with_http_info(opts = {})
       if @api_client.config.debugging
@@ -5241,8 +5241,8 @@ module OpencodeClient
     # Submit TUI response
     # Submit a response to the TUI request queue to complete a pending request.
     # @param [Hash] opts the optional parameters
-    # @option opts [String] :directory 
-    # @option opts [Object] :body 
+    # @option opts [String] :directory
+    # @option opts [Object] :body
     # @return [Boolean]
     def tui_control_response(opts = {})
       data, _status_code, _headers = tui_control_response_with_http_info(opts)
@@ -5252,8 +5252,8 @@ module OpencodeClient
     # Submit TUI response
     # Submit a response to the TUI request queue to complete a pending request.
     # @param [Hash] opts the optional parameters
-    # @option opts [String] :directory 
-    # @option opts [Object] :body 
+    # @option opts [String] :directory
+    # @option opts [Object] :body
     # @return [Array<(Boolean, Integer, Hash)>] Boolean data, response status code and response headers
     def tui_control_response_with_http_info(opts = {})
       if @api_client.config.debugging
@@ -5308,8 +5308,8 @@ module OpencodeClient
     # Execute TUI command
     # Execute a TUI command (e.g. agent_cycle)
     # @param [Hash] opts the optional parameters
-    # @option opts [String] :directory 
-    # @option opts [TuiExecuteCommandRequest] :tui_execute_command_request 
+    # @option opts [String] :directory
+    # @option opts [TuiExecuteCommandRequest] :tui_execute_command_request
     # @return [Boolean]
     def tui_execute_command(opts = {})
       data, _status_code, _headers = tui_execute_command_with_http_info(opts)
@@ -5319,8 +5319,8 @@ module OpencodeClient
     # Execute TUI command
     # Execute a TUI command (e.g. agent_cycle)
     # @param [Hash] opts the optional parameters
-    # @option opts [String] :directory 
-    # @option opts [TuiExecuteCommandRequest] :tui_execute_command_request 
+    # @option opts [String] :directory
+    # @option opts [TuiExecuteCommandRequest] :tui_execute_command_request
     # @return [Array<(Boolean, Integer, Hash)>] Boolean data, response status code and response headers
     def tui_execute_command_with_http_info(opts = {})
       if @api_client.config.debugging
@@ -5375,7 +5375,7 @@ module OpencodeClient
     # Open help dialog
     # Open the help dialog in the TUI to display user assistance information.
     # @param [Hash] opts the optional parameters
-    # @option opts [String] :directory 
+    # @option opts [String] :directory
     # @return [Boolean]
     def tui_open_help(opts = {})
       data, _status_code, _headers = tui_open_help_with_http_info(opts)
@@ -5385,7 +5385,7 @@ module OpencodeClient
     # Open help dialog
     # Open the help dialog in the TUI to display user assistance information.
     # @param [Hash] opts the optional parameters
-    # @option opts [String] :directory 
+    # @option opts [String] :directory
     # @return [Array<(Boolean, Integer, Hash)>] Boolean data, response status code and response headers
     def tui_open_help_with_http_info(opts = {})
       if @api_client.config.debugging
@@ -5435,7 +5435,7 @@ module OpencodeClient
     # Open models dialog
     # Open the model dialog
     # @param [Hash] opts the optional parameters
-    # @option opts [String] :directory 
+    # @option opts [String] :directory
     # @return [Boolean]
     def tui_open_models(opts = {})
       data, _status_code, _headers = tui_open_models_with_http_info(opts)
@@ -5445,7 +5445,7 @@ module OpencodeClient
     # Open models dialog
     # Open the model dialog
     # @param [Hash] opts the optional parameters
-    # @option opts [String] :directory 
+    # @option opts [String] :directory
     # @return [Array<(Boolean, Integer, Hash)>] Boolean data, response status code and response headers
     def tui_open_models_with_http_info(opts = {})
       if @api_client.config.debugging
@@ -5495,7 +5495,7 @@ module OpencodeClient
     # Open sessions dialog
     # Open the session dialog
     # @param [Hash] opts the optional parameters
-    # @option opts [String] :directory 
+    # @option opts [String] :directory
     # @return [Boolean]
     def tui_open_sessions(opts = {})
       data, _status_code, _headers = tui_open_sessions_with_http_info(opts)
@@ -5505,7 +5505,7 @@ module OpencodeClient
     # Open sessions dialog
     # Open the session dialog
     # @param [Hash] opts the optional parameters
-    # @option opts [String] :directory 
+    # @option opts [String] :directory
     # @return [Array<(Boolean, Integer, Hash)>] Boolean data, response status code and response headers
     def tui_open_sessions_with_http_info(opts = {})
       if @api_client.config.debugging
@@ -5555,7 +5555,7 @@ module OpencodeClient
     # Open themes dialog
     # Open the theme dialog
     # @param [Hash] opts the optional parameters
-    # @option opts [String] :directory 
+    # @option opts [String] :directory
     # @return [Boolean]
     def tui_open_themes(opts = {})
       data, _status_code, _headers = tui_open_themes_with_http_info(opts)
@@ -5565,7 +5565,7 @@ module OpencodeClient
     # Open themes dialog
     # Open the theme dialog
     # @param [Hash] opts the optional parameters
-    # @option opts [String] :directory 
+    # @option opts [String] :directory
     # @return [Array<(Boolean, Integer, Hash)>] Boolean data, response status code and response headers
     def tui_open_themes_with_http_info(opts = {})
       if @api_client.config.debugging
@@ -5615,8 +5615,8 @@ module OpencodeClient
     # Publish TUI event
     # Publish a TUI event
     # @param [Hash] opts the optional parameters
-    # @option opts [String] :directory 
-    # @option opts [TuiPublishRequest] :tui_publish_request 
+    # @option opts [String] :directory
+    # @option opts [TuiPublishRequest] :tui_publish_request
     # @return [Boolean]
     def tui_publish(opts = {})
       data, _status_code, _headers = tui_publish_with_http_info(opts)
@@ -5626,8 +5626,8 @@ module OpencodeClient
     # Publish TUI event
     # Publish a TUI event
     # @param [Hash] opts the optional parameters
-    # @option opts [String] :directory 
-    # @option opts [TuiPublishRequest] :tui_publish_request 
+    # @option opts [String] :directory
+    # @option opts [TuiPublishRequest] :tui_publish_request
     # @return [Array<(Boolean, Integer, Hash)>] Boolean data, response status code and response headers
     def tui_publish_with_http_info(opts = {})
       if @api_client.config.debugging
@@ -5682,8 +5682,8 @@ module OpencodeClient
     # Select session
     # Navigate the TUI to display the specified session.
     # @param [Hash] opts the optional parameters
-    # @option opts [String] :directory 
-    # @option opts [TuiSelectSessionRequest] :tui_select_session_request 
+    # @option opts [String] :directory
+    # @option opts [TuiSelectSessionRequest] :tui_select_session_request
     # @return [Boolean]
     def tui_select_session(opts = {})
       data, _status_code, _headers = tui_select_session_with_http_info(opts)
@@ -5693,8 +5693,8 @@ module OpencodeClient
     # Select session
     # Navigate the TUI to display the specified session.
     # @param [Hash] opts the optional parameters
-    # @option opts [String] :directory 
-    # @option opts [TuiSelectSessionRequest] :tui_select_session_request 
+    # @option opts [String] :directory
+    # @option opts [TuiSelectSessionRequest] :tui_select_session_request
     # @return [Array<(Boolean, Integer, Hash)>] Boolean data, response status code and response headers
     def tui_select_session_with_http_info(opts = {})
       if @api_client.config.debugging
@@ -5749,8 +5749,8 @@ module OpencodeClient
     # Show TUI toast
     # Show a toast notification in the TUI
     # @param [Hash] opts the optional parameters
-    # @option opts [String] :directory 
-    # @option opts [TuiShowToastRequest] :tui_show_toast_request 
+    # @option opts [String] :directory
+    # @option opts [TuiShowToastRequest] :tui_show_toast_request
     # @return [Boolean]
     def tui_show_toast(opts = {})
       data, _status_code, _headers = tui_show_toast_with_http_info(opts)
@@ -5760,8 +5760,8 @@ module OpencodeClient
     # Show TUI toast
     # Show a toast notification in the TUI
     # @param [Hash] opts the optional parameters
-    # @option opts [String] :directory 
-    # @option opts [TuiShowToastRequest] :tui_show_toast_request 
+    # @option opts [String] :directory
+    # @option opts [TuiShowToastRequest] :tui_show_toast_request
     # @return [Array<(Boolean, Integer, Hash)>] Boolean data, response status code and response headers
     def tui_show_toast_with_http_info(opts = {})
       if @api_client.config.debugging
@@ -5816,7 +5816,7 @@ module OpencodeClient
     # Submit TUI prompt
     # Submit the prompt
     # @param [Hash] opts the optional parameters
-    # @option opts [String] :directory 
+    # @option opts [String] :directory
     # @return [Boolean]
     def tui_submit_prompt(opts = {})
       data, _status_code, _headers = tui_submit_prompt_with_http_info(opts)
@@ -5826,7 +5826,7 @@ module OpencodeClient
     # Submit TUI prompt
     # Submit the prompt
     # @param [Hash] opts the optional parameters
-    # @option opts [String] :directory 
+    # @option opts [String] :directory
     # @return [Array<(Boolean, Integer, Hash)>] Boolean data, response status code and response headers
     def tui_submit_prompt_with_http_info(opts = {})
       if @api_client.config.debugging
@@ -5876,7 +5876,7 @@ module OpencodeClient
     # Get VCS info
     # Retrieve version control system (VCS) information for the current project, such as git branch.
     # @param [Hash] opts the optional parameters
-    # @option opts [String] :directory 
+    # @option opts [String] :directory
     # @return [VcsInfo]
     def vcs_get(opts = {})
       data, _status_code, _headers = vcs_get_with_http_info(opts)
@@ -5886,7 +5886,7 @@ module OpencodeClient
     # Get VCS info
     # Retrieve version control system (VCS) information for the current project, such as git branch.
     # @param [Hash] opts the optional parameters
-    # @option opts [String] :directory 
+    # @option opts [String] :directory
     # @return [Array<(VcsInfo, Integer, Hash)>] VcsInfo data, response status code and response headers
     def vcs_get_with_http_info(opts = {})
       if @api_client.config.debugging
@@ -5936,8 +5936,8 @@ module OpencodeClient
     # Create worktree
     # Create a new git worktree for the current project and run any configured startup scripts.
     # @param [Hash] opts the optional parameters
-    # @option opts [String] :directory 
-    # @option opts [WorktreeCreateInput] :worktree_create_input 
+    # @option opts [String] :directory
+    # @option opts [WorktreeCreateInput] :worktree_create_input
     # @return [Worktree]
     def worktree_create(opts = {})
       data, _status_code, _headers = worktree_create_with_http_info(opts)
@@ -5947,8 +5947,8 @@ module OpencodeClient
     # Create worktree
     # Create a new git worktree for the current project and run any configured startup scripts.
     # @param [Hash] opts the optional parameters
-    # @option opts [String] :directory 
-    # @option opts [WorktreeCreateInput] :worktree_create_input 
+    # @option opts [String] :directory
+    # @option opts [WorktreeCreateInput] :worktree_create_input
     # @return [Array<(Worktree, Integer, Hash)>] Worktree data, response status code and response headers
     def worktree_create_with_http_info(opts = {})
       if @api_client.config.debugging
@@ -6003,7 +6003,7 @@ module OpencodeClient
     # List worktrees
     # List all sandbox worktrees for the current project.
     # @param [Hash] opts the optional parameters
-    # @option opts [String] :directory 
+    # @option opts [String] :directory
     # @return [Array<String>]
     def worktree_list(opts = {})
       data, _status_code, _headers = worktree_list_with_http_info(opts)
@@ -6013,7 +6013,7 @@ module OpencodeClient
     # List worktrees
     # List all sandbox worktrees for the current project.
     # @param [Hash] opts the optional parameters
-    # @option opts [String] :directory 
+    # @option opts [String] :directory
     # @return [Array<(Array<String>, Integer, Hash)>] Array<String> data, response status code and response headers
     def worktree_list_with_http_info(opts = {})
       if @api_client.config.debugging
@@ -6063,8 +6063,8 @@ module OpencodeClient
     # Remove worktree
     # Remove a git worktree and delete its branch.
     # @param [Hash] opts the optional parameters
-    # @option opts [String] :directory 
-    # @option opts [WorktreeRemoveInput] :worktree_remove_input 
+    # @option opts [String] :directory
+    # @option opts [WorktreeRemoveInput] :worktree_remove_input
     # @return [Boolean]
     def worktree_remove(opts = {})
       data, _status_code, _headers = worktree_remove_with_http_info(opts)
@@ -6074,8 +6074,8 @@ module OpencodeClient
     # Remove worktree
     # Remove a git worktree and delete its branch.
     # @param [Hash] opts the optional parameters
-    # @option opts [String] :directory 
-    # @option opts [WorktreeRemoveInput] :worktree_remove_input 
+    # @option opts [String] :directory
+    # @option opts [WorktreeRemoveInput] :worktree_remove_input
     # @return [Array<(Boolean, Integer, Hash)>] Boolean data, response status code and response headers
     def worktree_remove_with_http_info(opts = {})
       if @api_client.config.debugging
@@ -6130,8 +6130,8 @@ module OpencodeClient
     # Reset worktree
     # Reset a worktree branch to the primary default branch.
     # @param [Hash] opts the optional parameters
-    # @option opts [String] :directory 
-    # @option opts [WorktreeResetInput] :worktree_reset_input 
+    # @option opts [String] :directory
+    # @option opts [WorktreeResetInput] :worktree_reset_input
     # @return [Boolean]
     def worktree_reset(opts = {})
       data, _status_code, _headers = worktree_reset_with_http_info(opts)
@@ -6141,8 +6141,8 @@ module OpencodeClient
     # Reset worktree
     # Reset a worktree branch to the primary default branch.
     # @param [Hash] opts the optional parameters
-    # @option opts [String] :directory 
-    # @option opts [WorktreeResetInput] :worktree_reset_input 
+    # @option opts [String] :directory
+    # @option opts [WorktreeResetInput] :worktree_reset_input
     # @return [Array<(Boolean, Integer, Hash)>] Boolean data, response status code and response headers
     def worktree_reset_with_http_info(opts = {})
       if @api_client.config.debugging
