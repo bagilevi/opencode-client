@@ -157,6 +157,8 @@ module OpencodeClient
         end
       elsif body
         data = body.is_a?(String) ? body : body.to_json
+      elsif json_mime?(header_params['Content-Type'])
+        data = '{}'
       else
         data = nil
       end
